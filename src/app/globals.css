@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* Equinox 2.0 design system: charcoal ground, signal green + periwinkle accents. */
+@theme inline {
+  --color-charcoal: #2a2a2a;
+  --color-deep: #151515;
+  --color-blue: #7484fe;
+  --color-green: #33ff67;
+  --color-paper: #f7f2f6;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-display: var(--font-syne), var(--font-geist-sans), sans-serif;
+}
+
+html {
+  background: #2a2a2a;
+  color: #f7f2f6;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-color: #2a2a2a;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.card {
+  border: 2px solid rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(2px);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 2px solid rgb(255 255 255 / 0.3);
+  background: #151515;
+  padding: 0.65rem 0.9rem;
+  color: #f7f2f6;
+  outline: none;
+}
+.input:focus {
+  border-color: #33ff67;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 2px solid #33ff67;
+  background: #33ff67;
+  color: #151515;
+  padding: 0.6rem 1.4rem;
+  font-weight: 800;
+  box-shadow: 4px 4px 0 rgb(0 0 0 / 0.35);
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translate(-1px, -1px);
+}
+.btn-ghost {
+  background: transparent;
+  color: #f7f2f6;
+  border-color: rgb(255 255 255 / 0.4);
+  box-shadow: none;
+}
