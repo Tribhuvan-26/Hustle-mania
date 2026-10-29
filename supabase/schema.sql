@@ -42,17 +42,16 @@ create policy "sales insert" on sales for insert to authenticated with check (st
 create policy "sales delete" on sales for delete to authenticated using (is_admin() or stall_id = my_stall());
 
 insert into stalls (name, owner) values
-  ('Apricorn Delight', 'Ganesh (GM)'),
-  ('VR + PS5', 'Ganesh (GM)'),
-  ('Stickers & Wall Posters', 'Raja Vivek (CIE)'),
-  ('Premium Stainless Steel Jewelry', 'Jaswanth'),
-  ('Crochet', null),
-  ('Ice Pops', null),
-  ('Beverages', 'Ganesh Goud'),
-  ('Get Ur Bag', null),
-  ('Balloon Shooting', null);
+  ('Drayen X Cakebowls', 'Jaswanth, Anurag'),
+  ('Gaming', 'Vardhan, Thomas'),
+  ('Beverages', 'Ganesh, Karthik'),
+  ('Popsicles', 'Ktrishank, Ramcharan, Sai Madhu, Manishankar, Lokesh Sai'),
+  ('Get Your Bag & Mojitos', 'Mirdati Tanuj, Aditya kirshna, Vinaayak, Ramanand, Sri charan'),
+  ('Crochet', 'Harsha'),
+  ('Wall Posters & Stickers', 'CIE Stall'),
+  ('360 Cam', 'CIE Stall');
 
 -- After creating users in Authentication > Users, link them:
 -- insert into profiles (id, role, name) values ('<admin-uid>', 'admin', 'Admin');
 -- insert into profiles (id, role, stall_id, name)
---   values ('<uid>', 'stall', (select id from stalls where name = 'Ice Pops'), 'Ice Pops');
+--   values ('<uid>', 'stall', (select id from stalls where name = 'Popsicles'), 'Popsicles');

@@ -1,12 +1,11 @@
 // Public landing-page list. Keep in sync with the seed in supabase/schema.sql.
 export const STALLS = [
-  { name: "Apricorn Delight", owner: "Ganesh (GM)" },
-  { name: "VR + PS5", owner: "Ganesh (GM)" },
-  { name: "Stickers & Wall Posters", owner: "Raja Vivek (CIE)" },
-  { name: "Premium Stainless Steel Jewelry", owner: "Jaswanth" },
-  { name: "Crochet", owner: "" },
-  { name: "Ice Pops", owner: "" },
-  { name: "Beverages", owner: "Ganesh Goud" },
-  { name: "Get Ur Bag", owner: "" },
-  { name: "Balloon Shooting", owner: "" },
+  { name: "Drayen X Cakebowls", owner: "Jaswanth, Anurag" },
+  { name: "Gaming", owner: "Vardhan, Thomas" },
+  { name: "Beverages", owner: "Ganesh, Karthik" },
+  { name: "Popsicles", owner: "Ktrishank, Ramcharan, Sai Madhu, Manishankar, Lokesh Sai" },
+  { name: "Get Your Bag & Mojitos", owner: "Mirdati Tanuj, Aditya kirshna, Vinaayak, Ramanand, Sri charan" },
+  { name: "Crochet", owner: "Harsha" },
+  { name: "Wall Posters & Stickers", owner: "CIE Stall" },
+  { name: "360 Cam", owner: "CIE Stall" },
 ];
